@@ -48,13 +48,13 @@ int main()
 		drw_line(&screen, 50, 50, 400, 400);
 		drw_col(&screen, 0, 0, 255, 255);
 		drw_pix(&screen, 460, 64);
-	
+
 		drw_blit(&screen);
 		if (SDL_PollEvent(&(input.e))) {
 			if (input.e.type == SDL_QUIT)
 				break;
 			else if (input.e.type == SDL_KEYDOWN) {
-				if (input._KEYSCAN == SDL_SCANCODE_D) 
+				if (input._KEYSCAN == SDL_SCANCODE_D)
 					utl_dbmsg("D key is down");
 			}
 		}

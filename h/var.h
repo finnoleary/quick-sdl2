@@ -13,8 +13,11 @@ typedef struct {
 	SDL_Event e;	
 } var_input;
 
+SDL_Rect var_rect; /* This is for backend usage, please don't use this directly :1 */
+
 #define _KEYSCAN e.key.keysym.scancode
 #define _KEYCODE e.key.keysym.sym
 #define _KEYMOD	 e.key.keysym.mod
 
 /* <include keys.h here> */
+/* Also: Get around to making keys.h */
